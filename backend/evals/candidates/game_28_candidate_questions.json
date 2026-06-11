@@ -1,0 +1,159 @@
+{
+  "game_id": 28,
+  "game_name": "Forest Shuffle",
+  "status": "candidate",
+  "generator": {
+    "model": "Pro/zai-org/GLM-5.1",
+    "max_pages": 4,
+    "questions_per_page": 2
+  },
+  "candidates": [
+    {
+      "id": "forest_shuffle_5acead696c",
+      "game_id": 28,
+      "game_name": "Forest Shuffle",
+      "question": "如果我拥有两张伞菌（Parasol Mushroom），放置卡片时能抽多少张牌？第二张伞菌还能得分吗？",
+      "expected_pages": [
+        8
+      ],
+      "expected_terms": [
+        "Parasol Mushroom",
+        "both",
+        "draw one card",
+        "scores no points"
+      ],
+      "evidence_quote": "If you have both Parasol Mushrooms, you only draw one card—for the first Parasol Mushroom scores no points.",
+      "category": "exception",
+      "review_notes": "Players may assume each Parasol Mushroom draws independently, but having both triggers an exception: only one card drawn for the first, and the second scores no points.",
+      "status": "candidate"
+    },
+    {
+      "id": "forest_shuffle_2f9ebb8148",
+      "game_id": 28,
+      "game_name": "Forest Shuffle",
+      "question": "橡树（Oak）在什么情况下不得分？如果我的森林中缺少一种树种会怎样？",
+      "expected_pages": [
+        8
+      ],
+      "expected_terms": [
+        "Oak",
+        "score no points",
+        "tree species",
+        "missing"
+      ],
+      "evidence_quote": "If you are missing at least one tree species in your forest, your Oaks score no points.",
+      "category": "scoring",
+      "review_notes": "Players often overlook that Oaks have a strict prerequisite: all tree species must be present. Missing even one species causes all Oaks to score zero.",
+      "status": "candidate"
+    },
+    {
+      "id": "forest_shuffle_81a7d2dc63",
+      "game_id": 28,
+      "game_name": "Forest Shuffle",
+      "question": "打出棕熊时，用来支付的手牌会怎样处理？它们也会放到洞穴卡下面计分吗？",
+      "expected_pages": [
+        2
+      ],
+      "expected_terms": [
+        "Brown Bear",
+        "cave card",
+        "including the cards with which you paid"
+      ],
+      "evidence_quote": "place them under your cave card, including the cards with which you paid for the Brown Bear",
+      "category": "exception",
+      "review_notes": "Players may assume payment cards are discarded separately, but they actually go under the cave card and score 1 point each — this is a common misunderstanding.",
+      "status": "candidate"
+    },
+    {
+      "id": "forest_shuffle_bfa520caad",
+      "game_id": 28,
+      "game_name": "Forest Shuffle",
+      "question": "如果我的森林里只有2种蝙蝠，棕长耳蝠还能得分吗？",
+      "expected_pages": [
+        2
+      ],
+      "expected_terms": [
+        "Brown Long-Eared Bat",
+        "3 different",
+        "bat species",
+        "score no points"
+      ],
+      "evidence_quote": "If there are less than 3 bat species in your forest, your bats score no points",
+      "category": "exception",
+      "review_notes": "The threshold of at least 3 different bat species is strict — falling short means ALL bats score zero, which players may easily overlook.",
+      "status": "candidate"
+    },
+    {
+      "id": "forest_shuffle_804dcab0e8",
+      "game_id": 28,
+      "game_name": "Forest Shuffle",
+      "question": "如果我有2只树蛙（Tree Frog）和2只蠓虫，树蛙总共能得多少分？",
+      "expected_pages": [
+        12
+      ],
+      "expected_terms": [
+        "Tree Frog",
+        "multiplied accordingly",
+        "Gnat"
+      ],
+      "evidence_quote": "If you have more than one Tree Frog, these points are multiplied accordingly.",
+      "category": "scoring",
+      "review_notes": "Players might mistakenly add the points instead of multiplying, or not know how multiple tree frogs interact with the number of gnats.",
+      "status": "candidate"
+    },
+    {
+      "id": "forest_shuffle_d47b58abd3",
+      "game_id": 28,
+      "game_name": "Forest Shuffle",
+      "question": "紫木蜂（Violet Carpenter Bee）本身会计入得分吗？比如放在橡树（Oak）旁边时，它能像橡树一样得分吗？",
+      "expected_pages": [
+        12
+      ],
+      "expected_terms": [
+        "Violet Carpenter Bee",
+        "scores no points",
+        "is no Oak"
+      ],
+      "evidence_quote": "The Violet Carpenter Bee scores no points.",
+      "category": "exception",
+      "review_notes": "Players might think VCB counts as a tree for scoring points (like the 4th Oak), but the rules explicitly state it scores no points and is no Oak.",
+      "status": "candidate"
+    },
+    {
+      "id": "forest_shuffle_a1012eb018",
+      "game_id": 28,
+      "game_name": "Forest Shuffle",
+      "question": "如果一张卡牌槽位中只有一个普通蟾蜍（Common Toad），它能得多少分？",
+      "expected_pages": [
+        3
+      ],
+      "expected_terms": [
+        "Common Toad",
+        "scores no points",
+        "single"
+      ],
+      "evidence_quote": "A single Common Toad in a card slot scores no points.",
+      "category": "scoring",
+      "review_notes": "Players might assume every card scores at least some points; this clarifies the specific exception for a solitary Common Toad.",
+      "status": "candidate"
+    },
+    {
+      "id": "forest_shuffle_9256f8a340",
+      "game_id": 28,
+      "game_name": "Forest Shuffle",
+      "question": "一个卡牌槽位最多可以有多少只普通蟾蜍（Common Toad）共享？",
+      "expected_pages": [
+        3
+      ],
+      "expected_terms": [
+        "Common Toad",
+        "share a card slot",
+        "At most two"
+      ],
+      "evidence_quote": "At most two Common Toads may share a card slot.",
+      "category": "exception",
+      "review_notes": "Clarifies the stacking limit for Common Toads, which is an exception to the normal one-card-per-slot rule.",
+      "status": "candidate"
+    }
+  ]
+}

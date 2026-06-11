@@ -1,0 +1,164 @@
+{
+  "game_id": 19,
+  "game_name": "Arydia: The Paths We Dare Tread",
+  "status": "candidate",
+  "generator": {
+    "model": "Pro/zai-org/GLM-5.1",
+    "max_pages": 4,
+    "questions_per_page": 2
+  },
+  "candidates": [
+    {
+      "id": "arydia_the_paths_we_dare_tre_aa4f4ae80e",
+      "game_id": 19,
+      "game_name": "Arydia: The Paths We Dare Tread",
+      "question": "流放者可以穿过其他流放者或敌人吗？移动后能停在另一个流放者的格子上吗？",
+      "expected_pages": [
+        57
+      ],
+      "expected_terms": [
+        "move through other exiles",
+        "end their movement",
+        "cannot move through foes"
+      ],
+      "evidence_quote": "Exiles can move through other exiles, but not end their movement on another exile’s square. Exiles cannot move through foes.",
+      "category": "exception",
+      "review_notes": "Players often confuse whether exiles block movement like foes do, and whether they can share spaces at the end of movement. This rule clarifies the exception for moving through allied exiles but not foes.",
+      "status": "candidate"
+    },
+    {
+      "id": "arydia_the_paths_we_dare_tre_2010b2c90f",
+      "game_id": 19,
+      "game_name": "Arydia: The Paths We Dare Tread",
+      "question": "使用标记为免费、反应或持续（Free, Reaction, or Ongoing）的技能时，需要消耗行动标记吗？",
+      "expected_pages": [
+        57
+      ],
+      "expected_terms": [
+        "Skills designated as Free",
+        "Reaction, or Ongoing",
+        "do not need action tokens"
+      ],
+      "evidence_quote": "Skills designated as Free, Reaction, or Ongoing do not need action tokens to use.",
+      "category": "cost",
+      "review_notes": "It is easy to assume all skills require action tokens since many combat skills do. This rule explicitly exempts Free, Reaction, and Ongoing skills from the action token cost, which is a common point of confusion.",
+      "status": "candidate"
+    },
+    {
+      "id": "arydia_the_paths_we_dare_tre_8bb831c314",
+      "game_id": 19,
+      "game_name": "Arydia: The Paths We Dare Tread",
+      "question": "被击倒（KO'd）的流亡者还能继续执行回合吗？他们能使用技能或物品吗？",
+      "expected_pages": [
+        59
+      ],
+      "expected_terms": [
+        "KO'd exiles",
+        "take a turn",
+        "cannot take actions",
+        "use skills or items"
+      ],
+      "evidence_quote": "KO’d exiles still take a turn until the end of combat",
+      "category": "turn_structure",
+      "review_notes": "Players might assume a KO'd exile skips their turn entirely, but the rule states they still take a turn while being unable to take actions or use skills/items.",
+      "status": "candidate"
+    },
+    {
+      "id": "arydia_the_paths_we_dare_tre_0853cfe775",
+      "game_id": 19,
+      "game_name": "Arydia: The Paths We Dare Tread",
+      "question": "当敌人的护甲点（Armored Points）受到伤害时，应该如何结算？",
+      "expected_pages": [
+        59
+      ],
+      "expected_terms": [
+        "Armored Points",
+        "take damage",
+        "Armor cube",
+        "wound"
+      ],
+      "evidence_quote": "When Armored point would take damage, remove Armor cube instead of placing a wound on point.",
+      "category": "exception",
+      "review_notes": "Players might mistakenly place a wound token on an armored point, but the rule specifies removing the armor cube instead.",
+      "status": "candidate"
+    },
+    {
+      "id": "arydia_the_paths_we_dare_tre_a365eee532",
+      "game_id": 19,
+      "game_name": "Arydia: The Paths We Dare Tread",
+      "question": "无路径物品和路径物品有什么区别？无路径物品可以被任何路径的角色使用吗？",
+      "expected_pages": [
+        15
+      ],
+      "expected_terms": [
+        "Pathless Items",
+        "brown 'A' icon",
+        "any path",
+        "Path items",
+        "Path Chests"
+      ],
+      "evidence_quote": "Pathless items are generic and can be used by any path. ... Path items are specific to each exile's path and can only be used by exiles of that path.",
+      "category": "exception",
+      "review_notes": "Players often confuse which items are restricted by path. The brown 'A' icon distinguishes Pathless items usable by anyone, while Path items with colored icons are path-restricted and only from Path Chests.",
+      "status": "candidate"
+    },
+    {
+      "id": "arydia_the_paths_we_dare_tre_b2b3a1b135",
+      "game_id": 19,
+      "game_name": "Arydia: The Paths We Dare Tread",
+      "question": "当角色达到4级后，如何更换已装备的技能？多余的技能存放在哪里？",
+      "expected_pages": [
+        15
+      ],
+      "expected_terms": [
+        "Level 4",
+        "slots",
+        "Exiles' Guild",
+        "tuckbox",
+        "equipped"
+      ],
+      "evidence_quote": "Once you reach Level 4, you will have more than you have slots in your character mat. You may any skills you've learned at the Exiles' Guild. Store any unused learned/mastered your tuckbox.",
+      "category": "action",
+      "review_notes": "Players may not realize that skill swapping is only possible at the Exiles' Guild, and may misunderstand where unused skills go. The Level 4 threshold triggers the need to choose which 5 skills are equipped.",
+      "status": "candidate"
+    },
+    {
+      "id": "arydia_the_paths_we_dare_tre_87b32c953b",
+      "game_id": 19,
+      "game_name": "Arydia: The Paths We Dare Tread",
+      "question": "学习新技能时，如果角色面板上没有空位，还能学习新技能吗？",
+      "expected_pages": [
+        13
+      ],
+      "expected_terms": [
+        "no open slots",
+        "unequip a skill",
+        "make room",
+        "new skill"
+      ],
+      "evidence_quote": "If there are no open slots, you may immediately unequip a skill to make room for the new skill.",
+      "category": "exception",
+      "review_notes": "Players may assume they cannot learn new skills when all slots are filled, but the rule explicitly allows unequipping to make room.",
+      "status": "candidate"
+    },
+    {
+      "id": "arydia_the_paths_we_dare_tre_76667ffd39",
+      "game_id": 19,
+      "game_name": "Arydia: The Paths We Dare Tread",
+      "question": "学习新技能时，前置技能需要装备并精通后才能学习吗？",
+      "expected_pages": [
+        13
+      ],
+      "expected_terms": [
+        "prerequisite skills",
+        "don't need to be equipped",
+        "nor mastered",
+        "learned first"
+      ],
+      "evidence_quote": "all prerequisite skills must be learned first (but they don't need to be equipped, nor mastered)",
+      "category": "exception",
+      "review_notes": "Players often misunderstand that prerequisites must be both equipped and mastered; the rule clarifies they only need to be learned, not equipped or mastered.",
+      "status": "candidate"
+    }
+  ]
+}

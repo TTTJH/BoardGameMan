@@ -1,0 +1,158 @@
+{
+  "game_id": 25,
+  "game_name": "Witcher: The old world",
+  "status": "candidate",
+  "generator": {
+    "model": "Pro/zai-org/GLM-5.1",
+    "max_pages": 4,
+    "questions_per_page": 2
+  },
+  "candidates": [
+    {
+      "id": "witcher_the_old_world_e0acaae57d",
+      "game_id": 25,
+      "game_name": "Witcher: The old world",
+      "question": "如果我在同一回合内移出再移回某个地点，能执行两次该地点的地点行动吗？",
+      "expected_pages": [
+        13
+      ],
+      "expected_terms": [
+        "Location Action",
+        "performed only once",
+        "move out"
+      ],
+      "evidence_quote": "Each Turn, each Location Action can be performed only once, even if you move out of the Location and back again during the same Turn.",
+      "category": "exception",
+      "review_notes": "Players might assume that leaving and returning to a location resets the action, but the rule explicitly forbids performing it more than once per turn.",
+      "status": "candidate"
+    },
+    {
+      "id": "witcher_the_old_world_6833cdf2f9",
+      "game_id": 25,
+      "game_name": "Witcher: The old world",
+      "question": "如果我在第一阶段与另一名猎魔人玩了骰子扑克，还能在第二阶段与该猎魔人战斗吗？",
+      "expected_pages": [
+        13
+      ],
+      "expected_terms": [
+        "play Dice Poker",
+        "fight with that Witcher",
+        "Phase II"
+      ],
+      "evidence_quote": "If you play Dice Poker with a Witcher, you can’t decide to fight with that Witcher during Phase II of the current Turn.",
+      "category": "exception",
+      "review_notes": "Players might think peaceful and aggressive interactions are independent, but playing Dice Poker imposes a strict restriction on fighting that Witcher later in the turn.",
+      "status": "candidate"
+    },
+    {
+      "id": "witcher_the_old_world_2d21ed0aba",
+      "game_id": 25,
+      "game_name": "Witcher: The old world",
+      "question": "战斗结束后，非主动玩家如果输了，抽几张牌？主动玩家如果输了，在第三阶段抽几张牌？",
+      "expected_pages": [
+        28
+      ],
+      "expected_terms": [
+        "non-Active Player Lost",
+        "draw 3 cards",
+        "Active Player Lost",
+        "draw 2 cards instead of 3"
+      ],
+      "evidence_quote": "If the non-Active Player Lost: They immediately draw 3 cards (instead of 4). ... If the Active Player Lost: They may only draw 2 cards instead of 3, during Phase III",
+      "category": "turn_structure",
+      "review_notes": "Players often confuse the different card draw penalties for losing: non-Active draws 3 (vs 4 if won), Active draws only 2 (vs 3 if won). The distinction between immediate draw vs Phase III draw is also critical.",
+      "status": "candidate"
+    },
+    {
+      "id": "witcher_the_old_world_19641c928c",
+      "game_id": 25,
+      "game_name": "Witcher: The old world",
+      "question": "如果我在战斗中下注的猎魔人输了，我的赌注金币去哪里？如果下注的猎魔人赢了呢？",
+      "expected_pages": [
+        28
+      ],
+      "expected_terms": [
+        "Wager on the Witcher who lost",
+        "Common Pool",
+        "Wager on the Witcher who won",
+        "gain the same amount of Gold"
+      ],
+      "evidence_quote": "If a Player placed a Wager on the Witcher who lost: they move their wagered Gold to the Common Pool. If a Player placed a Wager on the Witcher who won: they take back their Wagered Gold; additionally, they gain the same amount of Gold as the winner of the Fight.",
+      "category": "scoring",
+      "review_notes": "Wager resolution is easy to misunderstand: losing wager goes to Common Pool (not back to player), while winning wager returns the original bet PLUS an equal bonus. Players may forget the gold goes to Common Pool rather than being lost entirely, or miss the bonus payout on a winning wager.",
+      "status": "candidate"
+    },
+    {
+      "id": "witcher_the_old_world_d9fcae9144",
+      "game_id": 25,
+      "game_name": "Witcher: The old world",
+      "question": "当怪物被“驱赶”时，生成的新怪物等级与被击败时有什么不同？",
+      "expected_pages": [
+        26
+      ],
+      "expected_terms": [
+        "Driving the Monster Away",
+        "Spawn a Monster",
+        "same level"
+      ],
+      "evidence_quote": "Draw the new Monster of the same level as the Monster you have Driven Away.",
+      "category": "exception",
+      "review_notes": "Players often confuse the spawning level between Defeating (1 level higher) and Driving Away (same level).",
+      "status": "candidate"
+    },
+    {
+      "id": "witcher_the_old_world_685d9dc1c5",
+      "game_id": 25,
+      "game_name": "Witcher: The old world",
+      "question": "玩家遭遇“完全失败”后，当前回合的第三阶段抽卡数量有什么限制？",
+      "expected_pages": [
+        26
+      ],
+      "expected_terms": [
+        "Complete Defeat",
+        "Phase III",
+        "draw up to 2 cards"
+      ],
+      "evidence_quote": "you can only draw up to 2 cards during Phase III of your Turn",
+      "category": "timing",
+      "review_notes": "The temporary restriction on drawing cards in Phase III after a Complete Defeat is easily overlooked.",
+      "status": "candidate"
+    },
+    {
+      "id": "witcher_the_old_world_14ab165ab7",
+      "game_id": 25,
+      "game_name": "Witcher: The old world",
+      "question": "当需要将一张0费行动卡加入弃牌堆，但行动卡展示区没有0费卡牌时该怎么办？",
+      "expected_pages": [
+        27
+      ],
+      "expected_terms": [
+        "0-cost Action Card",
+        "Action Card Display",
+        "common Action Deck"
+      ],
+      "evidence_quote": "If there are no 0-cost cards in the Action Card Display: ignore steps 1, 2, and 3; then instead, perform the following steps: 1. Reveal cards (one at a time) from the top of the common Action Deck, until a 0-cost card is revealed",
+      "category": "exception",
+      "review_notes": "Players might miss the fallback rule when the Action Card Display lacks a 0-cost card, assuming they simply cannot add a card.",
+      "status": "candidate"
+    },
+    {
+      "id": "witcher_the_old_world_c03e32561a",
+      "game_id": 25,
+      "game_name": "Witcher: The old world",
+      "question": "如果我已经拥有某个猎魔人学派的战利品，再次击败该学派的猎魔人时，还能在战利品轨道上前进吗？",
+      "expected_pages": [
+        27
+      ],
+      "expected_terms": [
+        "already have a Trophy",
+        "Trophy Track",
+        "skip all steps"
+      ],
+      "evidence_quote": "If you already have a Trophy from that Witcher (i.e. you initiated the Fight with them before and won), skip all steps below.",
+      "category": "exception",
+      "review_notes": "Players might think they can stack trophies from the same school or still move on the trophy track, but the rules explicitly state to skip all steps.",
+      "status": "candidate"
+    }
+  ]
+}

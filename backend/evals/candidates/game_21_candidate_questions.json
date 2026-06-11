@@ -1,0 +1,155 @@
+{
+  "game_id": 21,
+  "game_name": "The Castles of Burgundy",
+  "status": "candidate",
+  "generator": {
+    "model": "Pro/zai-org/GLM-5.1",
+    "max_pages": 4,
+    "questions_per_page": 2
+  },
+  "candidates": [
+    {
+      "id": "the_castles_of_burgundy_71233762a0",
+      "game_id": 21,
+      "game_name": "The Castles of Burgundy",
+      "question": "出售货物时，我可以只卖出同色货物的一部分，保留剩下的吗？",
+      "expected_pages": [
+        8
+      ],
+      "expected_terms": [
+        "sell the complete stack",
+        "must always sell",
+        "Action Sell Goods"
+      ],
+      "evidence_quote": "When taking this action, you must always sell the complete stack of tiles of that type, even if you would rather keep some in reserve.",
+      "category": "exception",
+      "review_notes": "Players often misunderstand if they can partially sell a stack of goods to save some for later, but the rules strictly enforce selling the entire stack of that color.",
+      "status": "candidate"
+    },
+    {
+      "id": "the_castles_of_burgundy_5c72db69eb",
+      "game_id": 21,
+      "game_name": "The Castles of Burgundy",
+      "question": "在回合中，我可以在什么时候花费银币从中央黑色仓库购买板块？",
+      "expected_pages": [
+        8
+      ],
+      "expected_terms": [
+        "black depot",
+        "before, during, between or after",
+        "pay 2 silver coins"
+      ],
+      "evidence_quote": "This can be done at any time during your turn, i.e. before, during, between or after the two dice actions. To buy a hex tile, pay 2 silver coins",
+      "category": "timing",
+      "review_notes": "Players might confuse when the black depot purchase can occur relative to their two dice actions, or mistakenly think it costs a die action instead of just silver coins.",
+      "status": "candidate"
+    },
+    {
+      "id": "the_castles_of_burgundy_9ae1f2b7b5",
+      "game_id": 21,
+      "game_name": "The Castles of Burgundy",
+      "question": "在单人游戏中，修道院板块的胜利点数是在游戏结束时才计算吗？",
+      "expected_pages": [
+        14
+      ],
+      "expected_terms": [
+        "monastery tile",
+        "added immediately",
+        "instead of at the end of the game"
+      ],
+      "evidence_quote": "Victory points from a monastery tile are added immediately after placing it (instead of at the end of the game).",
+      "category": "timing",
+      "review_notes": "Players familiar with the base game might assume monastery scoring happens at the end, but the solo variant changes this timing.",
+      "status": "candidate"
+    },
+    {
+      "id": "the_castles_of_burgundy_229da8ae51",
+      "game_id": 21,
+      "game_name": "The Castles of Burgundy",
+      "question": "在单人模式中，当我完成一种颜色时，我还能获得胜利点数奖励吗？如果不能，我该怎么做？",
+      "expected_pages": [
+        14
+      ],
+      "expected_terms": [
+        "complete a color",
+        "victory point bonus",
+        "black depot"
+      ],
+      "evidence_quote": "You won’t gain a victory point bonus when you complete a color. Instead, choose a hex tile from the black depot and place it directly on your duchy",
+      "category": "exception",
+      "review_notes": "This is a major exception to the base game rules where completing a color grants a VP bonus; in solo mode it triggers a chain of taking tiles from the black depot instead.",
+      "status": "candidate"
+    },
+    {
+      "id": "the_castles_of_burgundy_cc888f3388",
+      "game_id": 21,
+      "game_name": "The Castles of Burgundy",
+      "question": "游戏结束时如果胜利点数平局，如何决定胜负？",
+      "expected_pages": [
+        9
+      ],
+      "expected_terms": [
+        "tie",
+        "fewest unused hex spaces",
+        "farthest behind on the bridge"
+      ],
+      "evidence_quote": "If there is a tie, the player with the fewest unused hex spaces in their duchy wins the game. If there is still a tie, the player who is farthest behind on the bridge is the winner.",
+      "category": "end_game",
+      "review_notes": "Players often forget the specific tiebreaker conditions and their order, making this a common point of confusion at the end of the game.",
+      "status": "candidate"
+    },
+    {
+      "id": "the_castles_of_burgundy_9128d78a3d",
+      "game_id": 21,
+      "game_name": "The Castles of Burgundy",
+      "question": "游戏结束计分时，工人怎么换算胜利点？",
+      "expected_pages": [
+        9
+      ],
+      "expected_terms": [
+        "every two worker chips",
+        "1 victory point"
+      ],
+      "evidence_quote": "For every two worker chips: 1 victory point",
+      "category": "scoring",
+      "review_notes": "Players frequently miscalculate or assume each worker chip is worth 1 VP, rather than needing two chips for 1 VP.",
+      "status": "candidate"
+    },
+    {
+      "id": "the_castles_of_burgundy_119403023e",
+      "game_id": 21,
+      "game_name": "The Castles of Burgundy",
+      "question": "拥有修道院板块7时，放置畜牧板块获得的额外1分是只给新放置的板块，还是同牧场上所有计分的畜牧板块都有？",
+      "expected_pages": [
+        10
+      ],
+      "expected_terms": [
+        "livestock tile",
+        "victory point",
+        "scores at that time"
+      ],
+      "evidence_quote": "you also gain 1 victory point for each livestock tile that scores at that time.",
+      "category": "scoring",
+      "review_notes": "Players often misunderstand whether the +1 VP applies only to the newly placed tile or all tiles in the pasture. The example clarifies it applies to all scoring tiles.",
+      "status": "candidate"
+    },
+    {
+      "id": "the_castles_of_burgundy_3249edf73c",
+      "game_id": 21,
+      "game_name": "The Castles of Burgundy",
+      "question": "修道院板块15在游戏结束时如何计分？未出售的货物算在种类里吗？",
+      "expected_pages": [
+        10
+      ],
+      "expected_terms": [
+        "end of the game",
+        "different type of goods",
+        "Unsold goods"
+      ],
+      "evidence_quote": "you gain 2 victory points for each different type of goods you sold at least once during the game. Unsold goods are ignored.",
+      "category": "end_game",
+      "review_notes": "Players might mistakenly count unsold goods towards the types, or count the total quantity of goods sold instead of the number of different types.",
+      "status": "candidate"
+    }
+  ]
+}

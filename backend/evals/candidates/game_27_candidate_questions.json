@@ -1,0 +1,155 @@
+{
+  "game_id": 27,
+  "game_name": "knight",
+  "status": "candidate",
+  "generator": {
+    "model": "Pro/zai-org/GLM-5.1",
+    "max_pages": 4,
+    "questions_per_page": 2
+  },
+  "candidates": [
+    {
+      "id": "knight_ac1767a6c9",
+      "game_id": 27,
+      "game_name": "knight",
+      "question": "如果我是本轮第一个行动的玩家，我能在自己的第一个回合之前使用\"在其他玩家回合\"的效果吗？",
+      "expected_pages": [
+        6
+      ],
+      "expected_terms": [
+        "before your first turn",
+        "on another player's turn",
+        "first player to play this Round"
+      ],
+      "evidence_quote": "You can use effects playable \"on another player's turn\" before your first turn, even if you are the first player to play this Round.",
+      "category": "timing",
+      "review_notes": "Players often assume that as the first player they cannot use 'on another player's turn' effects before their first turn since there are no other players who have gone yet. The rule explicitly allows this, which is counterintuitive and easy to misunderstand.",
+      "status": "candidate"
+    },
+    {
+      "id": "knight_213043778b",
+      "game_id": 27,
+      "game_name": "knight",
+      "question": "行动牌堆为空时，什么情况下必须宣告回合结束？什么情况下可以选择不宣告？",
+      "expected_pages": [
+        6
+      ],
+      "expected_terms": [
+        "Deed deck is empty",
+        "no cards in your hand",
+        "announce End of the Round"
+      ],
+      "evidence_quote": "You must announce End of the Round if your Deed deck is empty and you have no cards in your hand at the start of your turn.",
+      "category": "end_game",
+      "review_notes": "The distinction between mandatory and optional End of Round announcement is confusing. Players may not realize that having cards in hand (even with empty Deed deck) makes it optional, while having neither forces the announcement.",
+      "status": "candidate"
+    },
+    {
+      "id": "knight_2130d405e7",
+      "game_id": 27,
+      "game_name": "knight",
+      "question": "当我击败敌人获得声望并跨越升级线时，我是否立即升级？",
+      "expected_pages": [
+        9
+      ],
+      "expected_terms": [
+        "Level up immediately",
+        "end of the turn",
+        "Fame track"
+      ],
+      "evidence_quote": "If it crosses the end of a line, you do not Level up immediately. Level ups are done at the end of the turn.",
+      "category": "timing",
+      "review_notes": "Players often assume leveling up is immediate upon crossing the fame threshold, but the rule explicitly states it happens at the end of the turn.",
+      "status": "candidate"
+    },
+    {
+      "id": "knight_dfc57842b3",
+      "game_id": 27,
+      "game_name": "knight",
+      "question": "寒火攻击在什么情况下会被抗性减半？",
+      "expected_pages": [
+        9
+      ],
+      "expected_terms": [
+        "Cold Fire Attacks are halved",
+        "Ice and Fire Resistance"
+      ],
+      "evidence_quote": "Cold Fire Attacks are halved only when there is at least one targeted enemy with both Ice and Fire Resistance.",
+      "category": "exception",
+      "review_notes": "Players might assume Cold Fire is halved by either Ice or Fire resistance, but the rule specifies it requires an enemy with both resistances.",
+      "status": "candidate"
+    },
+    {
+      "id": "knight_837af8bef1",
+      "game_id": 27,
+      "game_name": "knight",
+      "question": "如果我的盾牌标记位于声望轨道的X格上，我还能与当地人互动吗？",
+      "expected_pages": [
+        8
+      ],
+      "expected_terms": [
+        "X space",
+        "Reputation track",
+        "cannot interact"
+      ],
+      "evidence_quote": "If your token is on the Xspace of the Reputation track, you cannot interact at all!",
+      "category": "exception",
+      "review_notes": "Players might not realize that reaching the bottom of the reputation track completely forbids interaction, which is a critical exception to the general interaction rules.",
+      "status": "candidate"
+    },
+    {
+      "id": "knight_de0a17dd3b",
+      "game_id": 27,
+      "game_name": "knight",
+      "question": "当我试图烧毁修道院时，我的声望会有什么变化？我会面对什么样的守卫？",
+      "expected_pages": [
+        8
+      ],
+      "expected_terms": [
+        "attempting to burn it",
+        "Reputation -3",
+        "violet enemy token"
+      ],
+      "evidence_quote": "If you do, you get Reputation -3, then draw a random violet enemy token as the defender.",
+      "category": "cost",
+      "review_notes": "Burning a monastery carries a steep reputation cost and specifically summons a violet enemy token, which players might confuse with the gray tokens used in other assaults.",
+      "status": "candidate"
+    },
+    {
+      "id": "knight_a233df7c28",
+      "game_id": 27,
+      "game_name": "knight",
+      "question": "进入城市的移动点数消耗会受昼夜地形变化的影响吗？",
+      "expected_pages": [
+        7
+      ],
+      "expected_terms": [
+        "cost to move into a city",
+        "always 2",
+        "Day or Night"
+      ],
+      "evidence_quote": "Note: The cost to move into a city is always 2, regardless of the terrain shown on its space.",
+      "category": "cost",
+      "review_notes": "Players might assume city movement cost changes with day/night like desert and forest, but the rule explicitly states it is always 2.",
+      "status": "candidate"
+    },
+    {
+      "id": "knight_3ff3f66fe4",
+      "game_id": 27,
+      "game_name": "knight",
+      "question": "如果我移动时从一个与暴怒敌人相邻的区域移到另一个与它相邻的区域，会发生什么？",
+      "expected_pages": [
+        7
+      ],
+      "expected_terms": [
+        "provoke a rampaging enemy",
+        "movement immediately ends",
+        "attacked"
+      ],
+      "evidence_quote": "If you provoke a rampaging enemy (i.e. move directly from a space adjacent to their token to another space adjacent to the same token), you are attacked by that enemy and your movement immediately ends.",
+      "category": "exception",
+      "review_notes": "Players might think they can slip past a rampaging enemy by moving between adjacent spaces, but this provokes the enemy and ends movement immediately.",
+      "status": "candidate"
+    }
+  ]
+}

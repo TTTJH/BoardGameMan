@@ -1,0 +1,29 @@
+{
+  "name": "boardgame-rulebook-assistant",
+  "version": "1.0.0",
+  "description": "AI-powered board game rulebook assistant frontend",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "axios": "^1.6.0",
+    "zustand": "^4.4.0",
+    "react-markdown": "^9.0.0",
+    "react-hot-toast": "^2.4.1",
+    "lucide-react": "^0.294.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
+    "vite": "^5.0.0",
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.31",
+    "autoprefixer": "^10.4.16"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .js,.jsx"
+  }
+}
