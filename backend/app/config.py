@@ -34,6 +34,7 @@ class Settings(BaseSettings):
     # Database Configuration
     DATABASE_URL: str = "sqlite:///./boardgames.db"
     VECTOR_DB_PATH: str = "./data/vector_db"
+    USE_CHROMA: bool = False
     
     # File Upload Configuration
     UPLOAD_DIR: str = "./uploads"

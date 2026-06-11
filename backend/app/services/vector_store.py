@@ -162,8 +162,12 @@ class VectorStore:
         self.rerank_service = RerankService()
         self.last_timing = {}
 
+        if not settings.USE_CHROMA:
+            logger.info("ChromaDB is disabled; using SQLite hybrid search")
+            return
+
         if chromadb is None:
-            logger.warning("ChromaDB is not installed; using SQLite hybrid search fallback")
+            logger.warning("ChromaDB is not installed; using SQLite hybrid search")
             return
 
         self.client = chromadb.PersistentClient(path=settings.VECTOR_DB_PATH)
@@ -176,7 +180,10 @@ class VectorStore:
 
         try:
             try:
-                self.client.get_collection(name=collection_name)
+                self.client.get_collection(
+                    name=collection_name,
+                    embedding_function=self._get_embedding_function(),
+                )
                 logger.info(f"Collection {collection_name} already exists")
                 return collection_name
             except Exception:
@@ -225,10 +232,16 @@ class VectorStore:
 
         try:
             try:
-                collection = self.client.get_collection(name=collection_name)
+                collection = self.client.get_collection(
+                    name=collection_name,
+                    embedding_function=self._get_embedding_function(),
+                )
             except Exception:
                 self.create_collection(game_id)
-                collection = self.client.get_collection(name=collection_name)
+                collection = self.client.get_collection(
+                    name=collection_name,
+                    embedding_function=self._get_embedding_function(),
+                )
             texts = [doc.get("text", doc) if isinstance(doc, dict) else doc for doc in documents]
             metadatas = [
                 doc.get("metadata", {"page": "unknown"}) if isinstance(doc, dict) else {"page": "unknown"}
@@ -331,7 +344,10 @@ class VectorStore:
 
         collection_name = f"game_{game_id}"
         try:
-            collection = self.client.get_collection(name=collection_name)
+            collection = self.client.get_collection(
+                name=collection_name,
+                embedding_function=self._get_embedding_function(),
+            )
             expanded_query = self._expand_query(query)
             search_k = max(top_k * 4, 12)
 
